@@ -1,3 +1,3 @@
 # Bitcoin-Predictor
 
-The dependencis for this python app are beautifulsoup4 ,bs4 ,requests ,lxml
+The dependency for this python app are requests ,lxml ,scikit-learn ,numpy
