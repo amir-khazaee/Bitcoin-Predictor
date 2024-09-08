@@ -37,16 +37,24 @@ Example URL: https://query1.finance.yahoo.com/v7/finance/download/BTC-USD?period
 
 Parameters
 period1: Start date in Unix epoch time (10 days ago).
+
 period2: End date in Unix epoch time (current date).
+
 interval: Daily interval (1d).
+
 The API returns a CSV file with columns: Date, Open, High, Low, Close, Adj Close, and Volume. The script processes the High and Low prices to calculate the daily average
 
 ## Algorithm Explanation
 The algorithm used in this script is based on linear regression. Here's a breakdown:
 
 Data Fetching: The script downloads the past 10 days of Bitcoin prices from Yahoo Finance.
+
 Data Preprocessing: It calculates the average price for each day based on the high and low prices.
-Linear Regression: The sklearn.linear_model.LinearRegression model is used to predict the price of Bitcoin for the next day. The input (x) is a sequence of numbers representing the days (1-10), and the output (y) is the average price for those days.
+
+Linear Regression: The sklearn.linear_model.LinearRegression model is used to predict the price of Bitcoin for the next day. The input (x) is a sequence of numbers representing the days (1-10), and the output (y) 
+
+is the average price for those days.
+
 Prediction: After training the model, it predicts the price for day 11
 
 ## Dependencies
