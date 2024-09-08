@@ -50,7 +50,5 @@ Linear Regression: The sklearn.linear_model.LinearRegression model is used to pr
 Prediction: After training the model, it predicts the price for day 11
 
 ## Dependencies
-pip install numpy
-pip install requests
-pip install scikit-learn
+numpy, requests, scikit-learn
 
